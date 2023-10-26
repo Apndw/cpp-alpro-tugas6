@@ -14,8 +14,7 @@ int main() {
     {"MARCEL", "40"}
   };
 
-  int i, k;
-  int jml_data = sizeof(nilai)/sizeof(nilai[0]);
+  int i, k, jml_data = sizeof(nilai)/sizeof(nilai[0]);
 
   for (i = 0; i < jml_data; i++) {
     cout << "Data ke - " << i << ": " << nilai[i][0] << " dengan nilai : " << nilai[i][1] << endl;
