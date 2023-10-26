@@ -4,10 +4,10 @@
 echo "Compiling C++ program with g++"
 
 # Source file name (change this to your C++ source file)
-source_file="./praktik3.cpp"
+source_file="./praktik32.cpp"
 
 # Output binary name (change this to your desired output name)
-output_binary="./praktik3"
+output_binary="./praktik32"
 
 # Compile the C++ program
 g++ -std=c++11 "$source_file" -o "$output_binary"
