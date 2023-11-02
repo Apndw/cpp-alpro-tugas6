@@ -1,10 +1,22 @@
 #include <iostream>
 
-using std::cin;
-using std::cout;
-using std::endl;
+using namespace std;
 
+/**
+ * A. Buatlah program untuk menampilkan menu pilihan berikut ini:
+ * 1. Entry Data
+ * 2. Cetak Laporan
+ * 3. Tentang
+ * 4. Halaman Utama
+ * 5. Lihat Laporan
+ * 6. Keluar
+ * 
+ * Pilihan yang dimasukkan oleh user akan ditampilkan di layar.
+ * Jika user memasukkan pilihan yang tidak tersedia, maka tampilkan
+ * pesan "Pilihan tidak tersedia".
+ */
 int main() {
+  // Tampilkan menu pilihan ke layar menggunakan fungsi cout
   cout << "1: Entry Data" << endl;
   cout << "2: Cetak Laporan" << endl;
   cout << "3: Tentang" << endl;
@@ -12,10 +24,22 @@ int main() {
   cout << "5: Lihat Laporan" << endl;
   cout << "6: Keluar" << endl;
 
+  // Deklarasi variabel untuk menyimpan pilihan user
   int pilihan;
+
+  // Tampilkan pesan untuk meminta user memasukkan pilihan
   cout << "Masukkan pilihan: ";
+
+  // Terima input dari user dan simpan di variabel pilihan
   cin >> pilihan;
 
+  /**
+   * Gunakan switch untuk mengecek pilihan user
+   * dan tampilkan pesan sesuai pilihan user
+   * 
+   * Jika user memasukkan pilihan yang tidak tersedia,
+   * tampilkan pesan "Pilihan tidak tersedia"
+   */
   switch (pilihan) {
     case 1:
       cout << "Entry Data" << endl;
@@ -40,5 +64,6 @@ int main() {
       break;
   }
 
+  // Selesai
   return 0;
 }
